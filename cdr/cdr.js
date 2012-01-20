@@ -101,6 +101,7 @@ function(args) {
 		];
 
 		winkstart.table.create('cdr', $('#cdr-grid'), columns, {}, {
+            aaSorting: [[5, 'desc']],
 			sDom: '<"date">frtlip'
 		});
 		$.fn.dataTableExt.afnFiltering.pop();
