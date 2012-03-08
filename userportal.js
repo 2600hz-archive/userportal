@@ -47,7 +47,7 @@
         modules: {
             'voicemail': false,
             'settings': false,
-            'cdr': false
+            'user_cdr': false
         },
 
         is_initialized: false,
@@ -146,7 +146,7 @@
             $('.options #voicemail').click(function() {
                 winkstart.publish('voicemail.activate');
             });
-    
+
             //We want to load the voicemail module as the opening page of the userportal
             winkstart.publish('voicemail.activate');
         }
