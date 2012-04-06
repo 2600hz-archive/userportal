@@ -27,7 +27,7 @@ winkstart.module('userportal', 'user_cdr', {
 function(args) {
     winkstart.registerResources(this.__whapp, this.config.resources);
 
-	winkstart.publish('subnav.add', {
+	winkstart.publish('whappnav.subnav.add', {
         whapp: 'userportal',
 		module: this.__module,
 		label: 'My Call History',
