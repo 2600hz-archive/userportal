@@ -164,7 +164,7 @@ function(args) {
 
 		$.fn.dataTableExt.afnFiltering.pop();
 
-		$('div.date', user_cdr_html).html('Start Date: <input id="startDate" readonly="readonly" type="text"/>&nbsp;&nbsp;End Date: <input id="endDate" readonly="readonly" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;<a class="button-search fancy_button blue" id="searchLink" href="javascript:void(0);">Filter</a><label class="call_duration"/>');
+		$('div.date', user_cdr_html).html('Start Date: <input id="startDate" readonly="readonly" type="text"/>&nbsp;&nbsp;End Date: <input id="endDate" readonly="readonly" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;<button class="button-search btn primary" id="searchLink" href="javascript:void(0);">Filter</button><label class="call_duration"/>');
 
         $('#user_cdr-grid_filter input[type=text]', '#user_cdr-grid_wrapper').keyup(function() {
             if($(this).val() != '') {

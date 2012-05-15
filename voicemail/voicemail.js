@@ -196,7 +196,7 @@ function(args) {
         });
 
         $('#save-voicemail-link, #delete-voicemail-link, #new-voicemail-link').click(function() {
-            var vmboxes, action = $(this).attr('action');
+            var vmboxes, action = $(this).dataset('action');
             if($('.select-checkbox:checked').size()) {
                 if(action == 'delete' && !confirm('Are you sure that you want to delete the selected voicemail message(s)?')) {
                     return false;
