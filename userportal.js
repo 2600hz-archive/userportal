@@ -41,6 +41,7 @@
 
         THIS.whapp_auth(function() {
             winkstart.publish('whappnav.add', { 'name' : THIS.__module });
+            THIS.initialization_check();
         });
     },
     {
@@ -59,9 +60,9 @@
 
             THIS.is_initialized = true;
 
-            winkstart.publish('subnav.show', THIS.__module);
-
-            THIS.setup_page();
+            if(winkstart.apps['userportal'].default){
+                THIS.setup_page();
+            }
         },
 
         activate: function() {
