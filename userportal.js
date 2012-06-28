@@ -60,7 +60,8 @@
 
             THIS.is_initialized = true;
 
-            if(winkstart.apps['userportal'].default){
+            if(winkstart.apps['userportal']['default']){
+                $('[data-whapp="userportal"] > a').addClass('activate');
                 THIS.setup_page();
             }
         },
